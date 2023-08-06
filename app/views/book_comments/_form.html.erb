@@ -1,0 +1,7 @@
+<%# byebug %>
+<%= form_with model: [book,BookComment.new] do |f| %>
+        <div class = "form-group" >
+          <%= f.text_area :comment, class: 'form-control', rows:'5'%>
+        </div>
+          <%= f.submit '送信', class: 'btn btn-success'%>
+<% end %>
